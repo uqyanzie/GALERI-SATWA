@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style1.css">
     <title>Document</title>
 </head>
@@ -25,12 +26,28 @@
         </div>
     </nav>
 
-    <section class="header">
+    <section class="Home">
 
-        <div class="header-slider">
-            <img src="image/Badak.jpg" alt="">
-            <img src="image/burung.jpg" alt="">
-            <img src="image/Komodo.jpg" alt="">
+        <div class="Home-content">
+            <img class="mySlides" src="image/kakatua.jfif" alt="">
+            <img class="mySlides" src="image/landscape.jfif" alt="">
+            <img class="mySlides" src="image/komodo.jpg" alt="">
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
         </div>
     </section>
 
@@ -65,67 +82,85 @@
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/c3/96/32/c396322d0f50a04b88442fcdbaa1be7f.jpg" alt="">
                 <h2>Gajah Sumatera</h2>
-                <p>(Elephas maximus sumatrensis) Gajah sumatra adalah subspesies dari gajah asia yang hanya berhabitat di Pulau Sumatra. Gajah sumatra berpostur lebih kecil daripada subspesies gajah india. Populasinya semakin menurun dan menjadi spesies yang sangat terancam. </p>
+                <h3>(Elephas maximus sumatrensis) </h3>
+                <p>Gajah sumatra adalah subspesies dari gajah asia yang hanya berhabitat di Pulau Sumatra. Gajah sumatra berpostur lebih kecil daripada subspesies gajah india. Populasinya semakin menurun dan menjadi spesies yang sangat terancam. </p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/98/44/cb/9844cb57525b66bf37130e700767d337.jpg" alt="">
                 <h2>Orang Utan</h2>
-                <p> (Pongo abelii) Orang utan atau mawas adalah salah satu jenis kera besar dengan lengan panjang dan berbulu kemerahan atau cokelat, yang hidup di hutan tropis Indonesia dan Malaysia, khususnya di Pulau Kalimantan dan Sumatra.</p>
+                <h3>(Pongo abelii)</h3>
+                <p>Orang utan atau mawas adalah salah satu jenis kera besar dengan lengan panjang dan berbulu kemerahan atau cokelat, yang hidup di hutan tropis Indonesia dan Malaysia, khususnya di Pulau Kalimantan dan Sumatra.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/e9/7f/73/e97f73af38cfb6138cdb86d4b444b582.jpg" alt="">
                 <h2>Badak Cula Satu</h2>
-                <p>(Rhinoceros sondaicus) Badak Jawa/Cula satu adalah sebuah anggota famili Rhinocerotidae dan salah satu dari lima spesies badak yang masih ada pada saat ini. Badak Jawa termasuk ke dalam genus yang sama dengan badak India, yang memiliki kemiripan dalam kulit bermosaik yang menyerupai baju baja namun lebih besar daripada badak jawa.</p>
+                <h3>(Rhinoceros sondaicus)</h3>
+                <p>Badak Jawa/Cula satu adalah sebuah anggota famili Rhinocerotidae dan salah satu dari lima spesies badak yang masih ada pada saat ini. Badak Jawa termasuk ke dalam genus yang sama dengan badak India, yang memiliki kemiripan dalam kulit bermosaik yang menyerupai baju baja namun lebih besar daripada badak jawa.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/736x/38/6a/fa/386afa036ec4076f86c3254d30e7c51f.jpg" alt="">
                 <h2>Harimau Sumatera</h2>
-                <p>(Panthera tigris sumatrae) Harimau Sumatra adalah populasi Panthera tigris sondaica yang mendiami pulau Sumatra, Indonesia dan satu-satunya anggota subspesies harimau sunda yang masih bertahan hidup hingga saat ini.</p>
+                <h3>(Panthera tigris sumatrae)</h3>
+                <p>Harimau Sumatra adalah populasi Panthera tigris sondaica yang mendiami pulau Sumatra, Indonesia dan satu-satunya anggota subspesies harimau sunda yang masih bertahan hidup hingga saat ini.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/2b/54/59/2b54598bd7040bfec4bc230e0c338660.jpg" alt="">
                 <h2>Binturung</h2>
-                <p>(Arctictis binturong) Binturung adalah sejenis musang bertubuh besar, anggota suku Viverridae. Beberapa dialek Melayu menyebutnya binturong, menturung atau menturun. Dalam bahasa Inggris, hewan ini disebut Binturong, Malay Civet Cat, Asian Bearcat, Palawan Bearcat, atau secara ringkas Bearcat.</p>
+                <h3>(Arctictis binturong)</h3>
+                <p>Binturung adalah sejenis musang bertubuh besar, anggota suku Viverridae. Beberapa dialek Melayu menyebutnya binturong, menturung atau menturun. Dalam bahasa Inggris, hewan ini disebut Binturong, Malay Civet Cat, Asian Bearcat, Palawan Bearcat, atau secara ringkas Bearcat.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://www.greeners.co/wp-content/uploads/2021/04/Elang-Flores-Abdul-Azis-Gizan.jpg" alt="">
                 <h2>Burung Elang Flores</h2>
-                <p>(Nisaetus floris) Elang Flores merupakan salah satu jenis raptor endemik yang dipunyai Indonesia dari keluarga Accipitridae dan Genus Nisaetus. Elang flores sebelumnya dianggap sebagai ras elang brontok tetapi Gjershaug et al menunjukkan bahwa perbedaan morfologis yang signifikan antara bentuk ini denga elang brontok.</p>
+                <h3>(Nisaetus floris)</h3>
+                <p>Elang Flores merupakan salah satu jenis raptor endemik yang dipunyai Indonesia dari keluarga Accipitridae dan Genus Nisaetus. Elang flores sebelumnya dianggap sebagai ras elang brontok tetapi Gjershaug et al menunjukkan bahwa perbedaan morfologis yang signifikan antara bentuk ini denga elang brontok.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/d9/54/37/d954376ba57e9210ba7fab9c0a8a9f47.jpg" alt="">
                 <h2>Kukang</h2>
-                <p>(Nycticebus) Kukang —kadang-kadang disebut pula malu-malu— adalah jenis primata yang gerakannya lambat. Warna rambutnya beragam, dari kelabu keputihan, kecoklatan, hingga kehitam-hitaman. Pada punggung terdapat garis cokelat melintang dari belakang hingga dahi, lalu bercabang ke dasar telinga dan mata.</p>
+                <h3>(Nycticebus)</h3>
+                <p>Kukang —kadang-kadang disebut pula malu-malu— adalah jenis primata yang gerakannya lambat. Warna rambutnya beragam, dari kelabu keputihan, kecoklatan, hingga kehitam-hitaman. Pada punggung terdapat garis cokelat melintang dari belakang hingga dahi, lalu bercabang ke dasar telinga dan mata.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/a5/66/99/a566991e551aa5fe86db1c8450873273.jpg" alt="">
                 <h2>Tarsius</h2>
-                <p>(Tarsiidae) Tarsius adalah primata dari genus Tarsius, suatu genus monotipe dari famili Tarsiidae, satu-satunya famili yang bertahan dari ordo Tarsiiformes. Meskipun grup ini dahulu kala memiliki penyebaran yang luas, akan tetapi semua spesies yang hidup sekarang jumlahnya terbatas dan ditemukan di pulau-pulau di Asia Tenggara.</p>
+                <h3>(Tarsiidae)</h3>
+                <p>Tarsius adalah primata dari genus Tarsius, suatu genus monotipe dari famili Tarsiidae, satu-satunya famili yang bertahan dari ordo Tarsiiformes. Meskipun grup ini dahulu kala memiliki penyebaran yang luas, akan tetapi semua spesies yang hidup sekarang jumlahnya terbatas dan ditemukan di pulau-pulau di Asia Tenggara.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/dd/b9/74/ddb974471e70a1b48be0766666f0c8f8.jpg" alt="">
                 <h2>Anoa</h2>
-                <p>(Bubalus sp.) Anoa adalah mamalia terbesar dan endemik yang hidup di daratan Pulau Sulawesi dan Pulau Buton. Banyak yang menyebut anoa sebagai kerbau kerdil. Anoa merupakan hewan yang tergolong fauna peralihan. Anoa merupakan mamalia tergolong dalam famili bovidae yang tersebar hampir di seluruh pulau Sulawesi.</p>
+                <h3>(Bubalus sp.) </h3>
+                <p>Anoa adalah mamalia terbesar dan endemik yang hidup di daratan Pulau Sulawesi dan Pulau Buton. Banyak yang menyebut anoa sebagai kerbau kerdil. Anoa merupakan hewan yang tergolong fauna peralihan. Anoa merupakan mamalia tergolong dalam famili bovidae yang tersebar hampir di seluruh pulau Sulawesi.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/a0/fb/35/a0fb35cd134cb6af2890a46f4f51843f.jpg" alt="">
                 <h2>Kura-Kura Leher Panjang</h2>
-                <p>( Chelodina mccordi) Kura-kura leher ular adalah sejenis kura-kura yang termasuk dalam keluarga Cheloniidae. Mereka hidup di perairan dekat pulau Rote, Nusa Tenggara Timur. Sesuai namanya kura-kura ini memiliki leher yang panjang menyerupai tubuh ular.</p>
+                <h3>(Chelodina mccordi)</h3>
+                <p>Kura-kura leher ular adalah sejenis kura-kura yang termasuk dalam keluarga Cheloniidae. Mereka hidup di perairan dekat pulau Rote, Nusa Tenggara Timur. Sesuai namanya kura-kura ini memiliki leher yang panjang menyerupai tubuh ular.</p>
+            </div>
+            
+            <div class="contents__item">
+                <img src="https://i.pinimg.com/564x/4a/f3/6f/4af36f39065d9724d311ce093f960270.jpg" alt="">
+                <h2>Komodo</h2>
+                <h3>(Varanus komodoensis)</h3>
+                <p>Komodo merupakan spesies terbesar dari familia Varanidae, sekaligus kadal terbesar di dunia, dengan rata-rata panjang 2-3 meter dan beratnya bisa mencapai 100 kg. Komodo merupakan pemangsa puncak di habitatnya karena sejauh ini tidak diketahui adanya hewan karnivora besar lain selain biawak ini di sebarang geografisnya.</p>
             </div>
 
             <div class="contents__item">
                 <img src="https://i.pinimg.com/564x/7e/ee/72/7eee723a2269d09624e2d968741fd0f7.jpg" alt="">
                 <h2>Tapir Sumatra</h2>
-                <p>(Acrocodia indica) Tapir sumatra adalah salah satu jenis tapir. Tapir asia merupakan jenis yang terbesar dari keempat jenis tapir dan satu-satunya yang berasal dari Asia. Nama ilmiahnya indicus merujuk pada Hindia Timur, yaitu habitat alami jenis ini.</p>
+                <h3>(Acrocodia indica)</h3>
+                <p>Tapir sumatra adalah salah satu jenis tapir. Tapir asia merupakan jenis yang terbesar dari keempat jenis tapir dan satu-satunya yang berasal dari Asia. Nama ilmiahnya indicus merujuk pada Hindia Timur, yaitu habitat alami jenis ini.</p>
             </div>
 
         </div>
@@ -134,8 +169,8 @@
 
     <section class="footer">
         <div class="ref">
-            <h1> referensi </h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, libero corporis. Et, quae repellat, quasi maxime reprehenderit expedita optio rem odit nam saepe dolore nesciunt incidunt fuga nisi obcaecati praesentium!</p>
+            <h1> Referensi </h1>
+            <h3> <a href="https://balurannationalpark.id/"> Landing Page Taman Nasional Baluran </a></h3>
         </div>
 
         <div class="bio">
