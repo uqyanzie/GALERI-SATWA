@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    height: 88vh;
+    background-image: url(image/sumateratiger.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position-y: center;
+    display: block;
+    filter: saturate(12%) opacity(93%);
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 60px;
+    padding-top: 21%;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.header {
+    background: #404344;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky+.container {
+    padding-top: 102px;
+}
+
+label.logo a:hover {
+    color: rgb(191, 235, 235);
+}
+
+label.logo a {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: 900;
+    text-decoration: none !important;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 18px;
+}
+
+nav ul li:hover {
+    background-color: rgb(191, 235, 235);
+}
+
+nav ul li a {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 7px 9px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+a.active,
+a:hover {
+    baackground: rgb(191, 235, 235);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1052px) {
+    .banner {
+        height: 50vh;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    label.logo {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .checkbtn {
+        width: 10%;
+        padding-right: 25px;
+        padding-left: 30px;
+        display: block;
+        margin-right: 0;
+    }
+    .checkbtn:hover {
+        background-color: rgb(191, 235, 235);
+    }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background: rgb(30, 146, 155);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        z-index: 1;
+        transition: 0.7s;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li:hover {
+        background: #6e807f;
+    }
+    nav ul li a {
+        font-size: 20px
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #d1e6ec;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        width: 10%;
+        padding-right: 50px;
+        padding-left: 30px;
+        display: block;
+    }
+    label.logo {
+        padding-left: 8px;
+    }
+    label.logo a {
+        font-size: 17px;
+    }
+    .checkbtn:hover {
+        background-color: rgb(191, 235, 235);
+    }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: rgb(30, 146, 155);
+        border-width: 2px;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li:hover {
+        background: #6e807f;
+    }
+    nav ul li a {
+        font-size: 18px
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.galeri {
+    margin: 30px;
+    background-color: black;
+    opacity: 0.6;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.galeri h1 {
+    color: white;
+    padding: 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(image/daunbackgroundfixpisan.png);
+    background-size: cover;
+}
+
+.card {
+    background: rgb(228, 237, 245);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 325px;
+    height: 488px;
+    margin: 35px;
+    border-radius: 20px;
+    border-width: 8px;
+    border-style: hidden;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card:hover {
+    background-color: rgb(54, 52, 52);
+    color: rgb(191, 235, 235);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+}
+
+.card-image {
+    height: 158px;
+    width: 325px;
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    height: 158px;
+    width: 325px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card h2 {
+    font-size: 26px;
+    padding-left: 6px;
+}
+
+.card h3 {
+    font-size: 20px;
+    padding-left: 7px;
+    padding-bottom: 12px;
+    font-style: italic;
+}
+
+.card p {
+    padding-left: 11px;
+    padding-right: 4px;
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card a {
+    background: black;
+    text-decoration: none !important;
+    font-size: 18px;
+    color: white;
+    padding: 8px 5px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 325px;
+    border-radius: 0 0 18px 18px;
+}
+
+.card a:hover {
+    font-weight: 700;
+    transition: 0.5ms;
+}
+
+.reference {
+    width: 100%;
+    min-height: fit-content;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    padding-left: 13%;
+    background: rgb(70, 69, 69);
+}
+
+.source {
+    padding-right: 17%;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.source h1 {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 23px;
+}
+
+.tech {
+    margin-left: 20px;
+    padding: 45px;
+}
+
+.kami {
+    margin-left: 20px;
+    padding: 45px;
+    background: rgba(66, 66, 66, 0.644);
+    width: 650px;
+}
+
+.tech {
+    background: rgba(66, 66, 66, 0.644);
+    width: 650px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.title h1 {
+    font-size: 35px;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 35px;
+    margin-left: 0;
+    background: rgb(236, 236, 236);
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: black;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.bar:hover {
+    transform: scale(1.07);
+    transition: all is ease;
+}
+
+.about_us {
+    width: 100%;
+    min-height: fit-content;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    background: rgb(226, 228, 228);
+    display: flex;
+    padding: 20px;
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    display: flex;
+}
+
+.avatar img {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    border: white;
+    border-width: 3px;
+    border-radius: 6px;
+}
+
+.biodata {
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.biodata h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.biodata h4 {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+@media (max-width:858px) {
+    .bar {
+        display: block;
+    }
+    .avatar {
+        margin-left: 21%;
+    }
+    .biodata {
+        margin-left: 30px;
+    }
+}
+
+.list {
+    display: flex;
+}
+
+.source ul {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.source ul li {
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.source ul li a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 21px;
+}
+
+.source ul li a:hover {
+    color: rgb(30, 146, 155);
+}
+
+@media (max-width: 858px) {
+    .list {
+        display: inline-block;
+    }
+    .about_us {
+        display: block;
+    }
+    .icon i {
+        display: block;
+        font-size: 90px;
+        color: rgb(255, 250, 250);
+    }
+    .kami {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+    .tech {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+}
+
+.icon i {
+    text-align: center;
+    display: block;
+    font-size: 170px;
+    margin-bottom: 45px;
+    color: rgb(255, 250, 250);
+}
+
+.icon i:hover {
+    transform: scale(1.17);
+    transition: all is ease;
+    color: rgb(191, 235, 235);
+}
+
+.footer {
+    background: rgb(65, 62, 62);
+    color: white;
+    padding-left: 21px;
+}

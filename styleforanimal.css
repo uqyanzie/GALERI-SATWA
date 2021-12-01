@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(image/daunbackgroundfixpisan.png);
+}
+
+.header {
+    background: #404344;
+    height: 80px;
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: block;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+label.logo a:hover {
+    color: rgb(191, 235, 235);
+}
+
+label.logo a {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 900;
+    text-decoration: none !important;
+}
+
+.main-content {
+    display: block;
+    height: fit-content;
+    width: 80%;
+    padding-top: 70px;
+    padding-bottom: 25px;
+    padding-left: 8vh;
+    padding-right: 11vh;
+    min-height: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-top: 35px;
+    background-color: black;
+    opacity: 0.6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.content-image {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.content-image img {
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center center;
+    border-width: 8px;
+    border: white;
+    border-style: solid;
+}
+
+.content-text {
+    color: white;
+}
+
+.content-text h1 {
+    text-align: center;
+}
+
+.content-text h2 {
+    font-style: italic;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.content-text h4 {
+    margin-left: 18%;
+    font-size: 24px;
+}
+
+.content-description {
+    margin-left: 18%;
+    margin-right: 19%;
+    padding-top: 45px;
+    color: white;
+}
+
+.content-description p {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.source {
+    padding-top: 60px;
+}
+
+@media(max-width:952px) {
+    .main-content {
+        background-size: cover;
+    }
+    .content-image img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .content-text h1 h2 {
+        text-align: center;
+    }
+    .content-text h4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .content-description {
+        text-align: justify;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 858px) {
+    label.logo a {
+        font-size: 20px;
+    }
+    .main-content {
+        background-size: cover;
+    }
+    .content-image img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .content-text h4 {
+        margin-leftt: 0;
+        margin-right: 0;
+    }
+    .content-description {
+        text-align: justify;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
